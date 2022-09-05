@@ -1,0 +1,25 @@
+{
+  "name": "social-media-startup",
+  "version": "1.0.0",
+  "description": "AS A social media startup\r I WANT an API for my social network that uses a NoSQL database\r SO THAT my website can handle large amounts of unstructured data\r Acceptance Criteria\r GIVEN a social network API\r WHEN I enter the command to invoke the application\r THEN my server is started and the Mongoose models are synced to the MongoDB database\r WHEN I open API GET routes in Insomnia for users and thoughts\r THEN the data for each of these routes is displayed in a formatted JSON\r WHEN I test API POST, PUT, and DELETE routes in Insomnia\r THEN I am able to successfully create, update, and delete users and thoughts in my database\r WHEN I test API POST and DELETE routes in Insomnia\r THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list\r Mock-Up",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mwjones2186/social-media-startup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mwjones2186/social-media-startup/issues"
+  },
+  "homepage": "https://github.com/mwjones2186/social-media-startup#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongoose": "^6.5.4"
+  }
+}
