@@ -17,12 +17,18 @@
 
   It is a simple plug and play. With all the routes, backend and middleware complete, someone can simply build out a front end and have a functioning social media startup. Or a message board that connects interoffice personel. .
 
-  How easy backend development and database control can be. Obviously this is on the simple side of what its capable of doing, however, the openness of mongo can really be a powerful tool. .
+  How easy backend development and database control can be. Obviously this is on the simple side of what its capable of doing, however, the openness of mongo can really be a powerful tool. 
 
  
 
   ## Installation
-  First you will need to make sure you have mongoDB installed. Once mongo is installed then you can start the actual install of this app. 1. Clone Repo 2. Open terminal and run 'npm i' 3. Open insomnia or similar testing application. 4. From there you can start testing routes. .
+  First you will need to make sure you have mongoDB installed. Once mongo is installed then you can start the actual install of this app. 
+  1. Clone Repo 
+  2. Open terminal and run 'npm i'
+  3. In terminal run 'npm start' terminal should display 'API server running on port 3001!
+  4. Open insomnia or similar testing application. 
+  5. From there you can start testing routes. 
+
 
   ## Usage
 
