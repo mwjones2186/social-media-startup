@@ -29,7 +29,7 @@ module.exports = {
       .then((user) =>
         !thought
           ? res.status(404).json({ message: "No thought with that ID" })
-          : res.json(thought)
+          : res.status(200).json({ message: "Thought has been created!" })
       )
       .catch((err) => res.status(500).json(err));
   },
@@ -65,8 +65,8 @@ module.exports = {
   //create a reaction tied to thought
   createReaction(req, res) {
     Thought.findOneAndUpdate(
-      { _id: req.params.userId },
-      { $push: { reaction: req.params.reactionId } },
+      { _id: req.params.thoughtId },
+      { $push: { reaction: req.body.reactionId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
@@ -80,8 +80,8 @@ module.exports = {
   // delete a reaction
   deleteReaction(req, res) {
     Thought.findOneAndUpdate(
-      { _id: req.params.userId },
-      { $pull: { reaction: req.params.reactionId } },
+      { _id: req.params.thoughtId },
+      { $pull: { reaction: req.body.reactionId } },
       { runValidators: true, new: true }
     )
       .then((user) =>
